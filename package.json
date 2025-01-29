@@ -23,7 +23,7 @@
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.13.0",
     "eslint": "^9.18.0",
-    "eslint-plugin-cypress": "^2.13.3",
+    "eslint-plugin-cypress": "^2.15.2",
     "globals": "^15.14.0"
   }
 }
