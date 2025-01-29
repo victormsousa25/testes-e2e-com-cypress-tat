@@ -4,16 +4,22 @@
       "commonjs": true,
       "es2021": true,
       "node": true,
-      "mocha": true  // Adicionado para reconhecer describe, it, etc.
+      "mocha": true,
+      "cypress/globals": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "plugin:cypress/recommended"
+    ],
     "parserOptions": {
-      "ecmaVersion": 12
+      "ecmaVersion": 2020,
+      "sourceType": "module"
     },
     "globals": {
-      "cy": "readonly",      // Adicionado para reconhecer 'cy'
-      "Cypress": "readonly"   // Adicionado para reconhecer 'Cypress'
+      "cy": "readonly",
+      "Cypress": "readonly"
     },
+    "plugins": ["cypress"],
     "rules": {
       "indent": [
         "error",
@@ -33,7 +39,10 @@
       ],
       "no-trailing-spaces": [
         "error"
-      ]
+      ],
+      "cypress/no-force": "error",
+      "cypress/assertion-before-screenshot": "error",
+      "cypress/no-pause": "error"
     }
   }
   
