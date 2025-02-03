@@ -1,0 +1,42 @@
+{
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "node": true,
+      "mocha": true,  // Adicionado para reconhecer describe, it, etc.
+      "cypress/globals": true
+
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "globals": {
+    "it": "readonly",
+    "describe": "readonly",
+    "cy": "readonly"
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-trailing-spaces": [
+        "error"
+      ]
+    }
+  }
+  
