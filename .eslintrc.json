@@ -13,7 +13,7 @@
     "globals": {
     "it": "readonly",
     "describe": "readonly",
-    "cy": "readonly"
+    "cy": true
     },
     "rules": {
       "indent": [
