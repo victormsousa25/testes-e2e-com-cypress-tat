@@ -4,7 +4,9 @@
       "commonjs": true,
       "es2021": true,
       "node": true,
-      "mocha": true  // Adicionado para reconhecer describe, it, etc.
+      "mocha": true,  // Adicionado para reconhecer describe, it, etc.
+      "cypress/globals": true
+
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -13,7 +15,7 @@
     "globals": {
     "it": "readonly",
     "describe": "readonly",
-    "cy": true
+    "cy": "readonly"
     },
     "rules": {
       "indent": [

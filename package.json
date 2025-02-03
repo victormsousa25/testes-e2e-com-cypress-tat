@@ -4,6 +4,7 @@
   "description": "TBD.",
   "main": "cypress.config.js",
   "scripts": {
+    "cypress:run": "cypress run --project cypress",
     "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
     "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
     "cy:open": "cypress open",
